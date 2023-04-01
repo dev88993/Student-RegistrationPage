@@ -1,0 +1,173 @@
+<html>
+    <head>
+        <title> Student Login</title>
+        <script type="text/javascript" language="javascript">
+            function fun()
+            {
+                alert("insertion successful");
+            }
+</script>
+        <style>
+            body{
+                font-family: tohama;
+                background: linear-gradient(120deg,#2980b9,aqua,aquamarine);
+                height: 50vh;
+                overflow: hidden;
+            }
+            mark{
+                color: #00796B;
+            }
+            
+            
+            p{
+                color: #17202A;
+                background-color: whitesmoke;
+                
+            }
+            input{
+                font-family: arial;
+                font-size: 20;
+               
+                border-left: double;
+                border-right: double;
+                border-bottom-style: inset;
+                border-top-style: outset;
+                color: #3366ff;
+                
+            }
+            textArea{
+                font-family: georgia;
+                font-size: 20;
+                
+                border-left: double;
+                border-right: double;
+                border-bottom-style: inset;
+                border-top-style: outset;
+                color: #3366ff;
+            }
+            select{
+                font-family: georgia;
+                font-size: 20;
+                
+                border-left: double;
+                border-right: double;
+                border-bottom-style: inset;
+                border-top-style: outset;
+                color: #3366ff;
+            }
+            #btn1{
+                background-color: whitesmoke;
+                padding: 5px;
+                font-family: georgia;
+                border: blueviolet;
+                border-left: double;
+                border-right: double;
+                border-bottom-style: groove;
+                border-top-style: groove;
+                color: #8e44ad;
+                border-color: red;
+            }
+            #btn2{
+                background-color: whitesmoke;
+                padding: 5px;
+                font-family: georgia;
+                border: aqua;
+                border-left: double;
+                border-right: double;
+                border-bottom-style: outset;
+                border-top-style: inset;
+                color: #2980b9;
+                border-color: yellowgreen;
+            }
+            form{
+                box-shadow: 2px 3px 10px 10px graytext;
+                
+                height: 520;                
+            }
+            .e{
+                font-family: monospace;
+                font-size: 20;
+                color: #999999;
+                position: absolute;
+                right: 55%;
+                bottom: 19%;
+                
+                height: 3;
+                
+                
+            }
+            .f{
+                font-family: monospace;
+                font-size: 20;
+                color: #999999;
+                position: absolute;
+                right: 54%;
+                bottom: 23%;
+            }
+            .g{
+                font-family: Helvetica;
+                font-size: 20;
+                color: captiontext;
+                position: absolute;
+                left: 25%;
+                bottom: 17%;
+                
+            }
+            p1{
+                position: absolute;
+                right: 40%;
+                bottom: 40%;
+            }
+        </style>
+    </head>
+    <body>
+        <form method="post" action="index.jsp">
+            <br><h1><i><u><p align="center" length="100">REGISTRATION PAGE</p></i></u></h1><hra color="blue">
+                  <marquee behavior="scroll" direction="right" bgacolor="skyblue">
+                      <font face="georgia" size="5" color="blue">
+                      <i><u><mark>WELCOME TO STUDENT LOGIN PAGE</mark></u></i>
+                  </marquee>
+                <table align="center">
+                    <div class="g"><b><i><u>If you want to delete : <br><br> If you want to update :</u></i></b></div>
+                    <div class="e">
+                        <a href="select.jsp"><b>EDIT</b></a>
+                    </div>  
+                    <div class="f">
+                        <a href="selectdelete.jsp"><b>DELETE</b></a>
+                    </div>
+    <tr>
+        <td><font size="6" face="tohama" color="##1B4F72"><b>Roll:&nbsp;</td>
+        <td>&nbsp;<input type="text" name="t1" value="" required placeholder="User Id"   ></td>
+    </tr>
+    <tr>
+        <td><font size="6" face="tohama" color="##1B4F72"><b>Name:&nbsp;</td>
+        <td>&nbsp;<input type="text" name="t2" value="" required placeholder="Full Name"></td>
+    </tr>
+    <tr>
+        <td><font size="6" face="tohama" color="##1B4F72"><b>Address:&nbsp;</td>
+        <td>&nbsp;<textarea name="t3" rows="3" cols="20" value="" required></textarea></td>
+    </tr>
+    <tr>
+        <td><font size="6" face="tohama" color="#1B4F72"><b>Qualification:&nbsp;</td>
+        <td>&nbsp;<select name="Degree" placeholder="Degree">
+                <option name="opt1" value="BCA">&nbsp; BCA &nbsp;
+                <option name="opt2" value="MCA">&nbsp; MCA &nbsp;
+                </td>
+    </tr>
+                <tr>
+                    <td><font size="6" face="tohama" color="#1B4F72"><b>Gender:&nbsp;</td>
+                    <td>&nbsp;<font color="blue" size="5"><input type="radio" name="r" id="r1" value="Male" required><u><i>Male
+                                &nbsp;<font color="blue" size="5"><input type="radio" name="r" id="r2" value="Female" required><i><u>Female</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><p1 align="right">
+                            <input type="submit" name="btn1" id="btn1" value="SUBMIT" onclick="fun()">
+                        <input type="reset" name="btn2" id="btn2" value="RESET">
+                    </td>
+                </tr>
+                </table>
+                      
+        </form>
+        </body>
+   
+ </html>
